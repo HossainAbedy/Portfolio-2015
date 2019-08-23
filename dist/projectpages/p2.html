@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href=".././css/main.css">
   <link rel="icon" type="image/gif/png" href=".././img/portrait.jpg">
   <title>Project Description</title>
@@ -57,11 +57,19 @@
      Using Laravel Echo and Vue.js
     </h2>
     <div class="boxes">
-    <div class="card">
-        <div class="card body">
-            <img src=".././img/projects/project2.PNG">
+        <div class="card">
+            <div class="card body">
+                <img class="mySlides" src=".././img/projects/p2/p2_1.PNG" style="height:550px;width:1000px">
+                <img class="mySlides" src=".././img/projects/p2/p2_2.PNG" style="height:550px;width:1000px">
+                <img class="mySlides" src=".././img/projects/p2/p2_3.PNG" style="height:550px;width:1000px">
+                <img class="mySlides" src=".././img/projects/p2/p2_4.PNG" style="height:550px;width:1000px">
+                <img class="mySlides" src=".././img/projects/p2/p2_5.PNG" style="height:550px;width:1000px">
+                <img class="mySlides" src=".././img/projects/p2/p2_6.PNG" style="height:550px;width:1000px">
+                <img class="mySlides" src=".././img/projects/p2/p2_7.PNG" style="height:550px;width:1000px">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
         </div>
-    </div>
    
       <div>
         <span class="text-secondary"></span> Messenger App 
@@ -72,6 +80,25 @@
   <footer id="main-footer">
     Copyright &copy; 2018
   </footer>
+  <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  </script>
 
   <script src=".././js/main.js"></script>
 </body>
