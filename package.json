@@ -11,6 +11,7 @@
   "author": "Abedy",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }

@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/gif/png" href="img/portrait.jpg">
   <title>About Me</title>
@@ -33,12 +37,12 @@
         </li>
         <li class="nav-item current">
           <a href="about.html" class="nav-link">
-            About Me
+            My skills
           </a>
         </li>
         <li class="nav-item">
           <a href="work.html" class="nav-link">
-            My Work
+            My Works
           </a>
         </li>
         <li class="nav-item">
@@ -52,8 +56,8 @@
 
   <main id="about">
     <h1 class="lg-heading">
-      About
-      <span class="text-secondary">Me</span>
+      My
+      <span style="color:rgb(245, 12, 4)">Skills</span>
     </h1>
     <h2 class="sm-heading">
       Let me tell you a few things...
@@ -62,28 +66,186 @@
       <img src="img/portrait.jpg" alt="John Doe" class="bio-image">
 
       <div class="bio">
-        <h3 class="text-secondary">BIO</h3>
+        <h3 style="color:rgb(245, 12, 4)">BIO</h3>
         <p>I am a web developer who loves programming and web designing.</p>
       </div>
-
       <div class="job job-1">
-        <h3>Safara IT</h3>
-        <h6>Full Stack Developer</h6>
-        <p>Laravel Framework</p>
+          <div class="row">
+              <div class="col-md-9">
+                <h3>Back End </h3>
+                <h6>Development</h6>
+              </div>
+              <!-- 1st Modal -->
+              <div class="col-md-3">
+                <button type="button" class="flash-button" id="backend-btn">Details</button>
+              </div>
+              <div id="backend" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Laravel..</p>
+                </div>    
+              </div>
+              <!-- 1st Modal -->  
+          </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2 style="color:rgb(245, 12, 4);text-align:center">Laravel</h2>
+              <img class="d-block w-100" src="./img/aboutMe/backend/laravel.png" style="height:200px;width:500px" alt="First slide">
+              <h5><span style="color:rgb(231, 21, 14)">Primary </span>Choice</h5>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h2 style="color:rgb(12, 243, 70);text-align:center">Express</h2>
+              <img class="d-block w-100" src="./img/aboutMe/backend/express.png" style="height:200px;width:500px" alt="Second slide">
+              <h5><span style="color:rgb(9, 94, 105)">Standerd </span>Expericance</h5>
+              <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="carousel-item">     
+              <h2 style="color:rgb(236, 160, 19);text-align:center">Asp .net</h2>
+              <img class="d-block w-100" src="./img/aboutMe/backend/asp.png" style="height:200px;width:500px" alt="Third slide">
+              <h5><span style="color:rgb(12, 243, 70)">Basic </span>Expericance</h5>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
       </div>
 
       <div class="job job-2">
-        <h3>Safara IT</h3>
-        <h6>Front End Developer</h6>
-        <p>Vue.js</p>
+          <div class="row">
+              <div class="col-md-9">
+                <h3>Front End </h3>
+                <h6>Development</h6>
+              </div>
+              <!-- 2nd Modal -->
+              <div class="col-md-3">
+                <button type="button" class="flash-button" id="frontend-btn">Details</button>
+              </div>
+              <div id="frontend" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Vue..</p>
+                </div>    
+              </div>
+              <!-- 2nd Modal -->  
+          </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2 style="color:rgb(30, 212, 142);text-align:center">Vue</h2>
+              <img class="d-block w-100" src="./img/aboutMe/frontend/vue.png" style="height:200px;width:500px" alt="First slide">
+              <h5><span style="color:rgb(231, 21, 14)">Primary </span>Choice</h5>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h2 style="color:rgb(24, 126, 173);text-align:center">React</h2>
+              <img class="d-block w-100" src="./img/aboutMe/frontend/react.png" style="height:200px;width:500px" alt="Second slide">
+              <h5><span style="color:rgb(9, 94, 105)">Standerd </span>Expericance</h5>
+              <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h2 style="color:rgb(231, 21, 14);text-align:center">Angular</h2>
+              <img class="d-block w-100" src="./img/aboutMe/frontend/angular.png" style="height:200px;width:500px" alt="Third slide">
+              <h5><span style="color:rgb(195, 228, 9)">Basic </span>Expericance</h5>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
       </div>
 
       <div class="job job-3">
-        <h3>Safara IT</h3>
-        <h6>Web Designer</h6>
-        <p>Adobe</p>
-      </div>
-    </div>
+          <div class="row">
+              <div class="col-md-9">
+                <h3>Mobile App </h3>
+                <h6>Development</h6>
+              </div>
+               <!--3rd Modal -->
+               <div class="col-md-3">
+                  <button type="button" class="flash-button" id="mobileapp-btn">Details</button>
+               </div>
+               <div id="mobileapp" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>App..</p>
+                </div>    
+              </div>
+                <!--3rd Modal -->  
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 style="color:rgb(30, 212, 142);text-align:center">Native Script</h2>
+                <img class="d-block w-100" src="./img/aboutMe/mobileapp/nativescript.png" style="height:200px;width:500px" alt="First slide">
+                <h5><span style="color:rgb(231, 21, 14)">Primary </span>Choice</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <h2 style="color:rgb(24, 126, 173);text-align:center">Cordova</h2>
+                <img class="d-block w-100" src="./img/aboutMe/mobileapp/cordova.png" style="height:200px;width:500px" alt="Second slide">
+                <h5><span style="color:rgb(195, 228, 9)">Basic </span>Expericance</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <h2 style="color:rgb(24, 126, 173);text-align:center">Ionic</h2>
+                  <img class="d-block w-100" src="./img/aboutMe/mobileapp/ionic.png" style="height:200px;width:500px" alt="Second slide">
+                  <h5><span style="color:rgb(195, 228, 9)">Basic </span>Expericance</h5>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width:50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
   </main>
 
   <footer id="main-footer">
@@ -91,6 +253,58 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <!-- custom js -->
+  <script>
+      // Get the modal
+      var backendmodal = document.getElementById("backend");
+      var frontendmodal = document.getElementById("frontend");
+      var mobileappmodal = document.getElementById("mobileapp");
+      
+      // Get the button that opens the modal
+      var backendbtn = document.getElementById("backend-btn");
+      var frontendbtn = document.getElementById("frontend-btn");
+      var mobileappbtn = document.getElementById("mobileapp-btn");
+      
+      // Get the <span> element that closes the modal
+      var backendspan = document.getElementsByClassName("close")[0];
+      var frontendspan = document.getElementsByClassName("close")[0];
+      var mobileappspan = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      backendbtn.onclick = function() {
+        backendmodal.style.display = "block";
+      }
+      frontendbtn.onclick = function() {
+        frontendmodal.style.display = "block";
+      }
+      mobileappbtn.onclick = function() {
+        mobileappmodal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      backendspan.onclick = function() {
+        backendmodal.style.display = "none";
+      }
+      frontendspan.onclick = function() {
+        frontendmodal.style.display = "none";
+      }
+      mobileappspan.onclick = function() {
+        mobileappmodal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == backendmodal) {
+          backendmodal.style.display = "none";
+        }
+        if (event.target == frontendmodal) {
+          frontendmodal.style.display = "none";
+        }
+        if (event.target == mobileappmodal) {
+          mobileappmodal.style.display = "none";
+        }
+      }
+      </script>
 </body>
 
 </html>
