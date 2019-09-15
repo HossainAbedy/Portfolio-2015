@@ -1,4 +1,4 @@
-body {
+html {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@ body {
   --lightBg: #fff;
   --lightColor: #232323; }
 
-body[data-theme='dark'] {
+html[data-theme='dark'] {
   background: var(--lightBg);
   --lightBtn: #FFBD07;
   --lightBg: #232323;
