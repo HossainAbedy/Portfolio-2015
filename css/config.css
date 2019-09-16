@@ -33,7 +33,7 @@ label {
   height: 30px;
   background: var(--lightBtn);
   margin: 0 auto;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   -webkit-border-radius: 100px;
