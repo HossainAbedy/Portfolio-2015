@@ -16,7 +16,15 @@ html[data-theme='dark'] {
   --lightBg: #232323;
   --lightColor: #fff; }
 
+i {
+  color: var(--lightColor); }
+
 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--lightColor); }
+
+h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: var(--lightColor); }
@@ -91,7 +99,7 @@ html.transition *:after {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #ff0000;
+    background: var(--lightColor);
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -176,6 +184,7 @@ html.transition *:after {
   box-sizing: border-box; }
 
 body {
+  background: var(--lightBg);
   height: 100%;
   width: 100%;
   margin: 0;

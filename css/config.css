@@ -16,7 +16,15 @@ html[data-theme='dark'] {
   --lightBg: #232323;
   --lightColor: #fff; }
 
+i {
+  color: var(--lightColor); }
+
 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--lightColor); }
+
+h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: var(--lightColor); }
