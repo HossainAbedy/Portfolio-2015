@@ -694,7 +694,7 @@ img {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--lightBg);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -702,7 +702,7 @@ img {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #eb0000;
   float: right;
   font-size: 28px;
   font-weight: bold; }
