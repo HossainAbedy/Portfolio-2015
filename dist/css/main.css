@@ -192,6 +192,9 @@ html.transition *:after {
 * {
   box-sizing: border-box; }
 
+canvas {
+  display: block; }
+
 body {
   background: var(--lightBg);
   height: 100%;
@@ -634,6 +637,27 @@ img {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */ }
 
+/* Modal Content */
+.modal-content {
+  background-color: var(--lightBg);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; }
+
+/* The Close Button */
+.close {
+  color: #eb0000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
@@ -691,24 +715,3 @@ img {
       height: 150px; }
   .projects {
     grid-template-columns: 1fr; } }
-
-/* Modal Content */
-.modal-content {
-  background-color: var(--lightBg);
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; }
-
-/* The Close Button */
-.close {
-  color: #eb0000;
-  float: right;
-  font-size: 28px;
-  font-weight: bold; }
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer; }
