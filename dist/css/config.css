@@ -7,18 +7,35 @@ html {
   align-items: center;
   background: var(--lightBg);
   --lightBtn: #FE016C;
-  --lightBg: #fff;
-  --lightColor: #232323; }
+  --lightBg: #232323;
+  --lightColor: #fff; }
 
 html[data-theme='dark'] {
   background: var(--lightBg);
   --lightBtn: #FFBD07;
-  --lightBg: #232323;
-  --lightColor: #fff; }
+  --lightBg: #fff;
+  --lightColor: #232323; }
+
+i {
+  color: var(--lightColor); }
+
+p {
+  color: var(--lightColor); }
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  color: var(--lightColor); }
+
+h2 {
+  color: var(--lightColor); }
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--lightColor); }
+
+h6 {
   color: var(--lightColor); }
 
 input[type=checkbox] {

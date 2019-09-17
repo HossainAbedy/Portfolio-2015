@@ -7,7 +7,7 @@
 
 body {
   @include background;
-  // background: $primary-color;
+  background: var(--lightBg);
   // color: set-text-color($primary-color);
   height: 100%;
   width: 100%;
@@ -15,18 +15,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
-
-//theme
-// body[data-theme='dark'] {
-//   @include background;
-//   background: $dark-color;
-//   color: set-text-color($dark-color);
-//   height: 100%;
-//   margin: 0;
-//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-//   line-height: 1.5;
-// }
-//theme
 
 // Headings
 h1,
@@ -515,7 +503,7 @@ img{
 @import 'mobile';
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--lightBg);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -524,7 +512,7 @@ img{
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #eb0000;
   float: right;
   font-size: 28px;
   font-weight: bold;
