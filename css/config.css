@@ -8,12 +8,14 @@ html {
   background: var(--lightBg);
   --lightBtn: #FE016C;
   --lightBg: #232323;
+  --lightBg2: #000;
   --lightColor: #fff; }
 
 html[data-theme='dark'] {
   background: var(--lightBg);
   --lightBtn: #FFBD07;
   --lightBg: #fff;
+  --lightBg2: rgba(5, 5, 5, 0.5);
   --lightColor: #232323; }
 
 i {

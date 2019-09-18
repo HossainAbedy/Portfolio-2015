@@ -8,12 +8,14 @@ html {
   background: var(--lightBg);
   --lightBtn: #FE016C;
   --lightBg: #232323;
+  --lightBg2: #000;
   --lightColor: #fff; }
 
 html[data-theme='dark'] {
   background: var(--lightBg);
   --lightBtn: #FFBD07;
   --lightBg: #fff;
+  --lightBg2: rgba(5, 5, 5, 0.5);
   --lightColor: #232323; }
 
 i {
@@ -279,8 +281,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #0d0d0d;
+    background: var(--lightBg2);
     padding: 0.5rem;
+    border-top: #ff0000 5px solid;
     border-bottom: #ff0000 5px solid; }
 
 .projects {
