@@ -8,13 +8,30 @@ html {
   background: var(--lightBg);
   --lightBtn: #FE016C;
   --lightBg: #232323;
+  --lightBg2: #000;
   --lightColor: #fff; }
 
 html[data-theme='dark'] {
   background: var(--lightBg);
   --lightBtn: #FFBD07;
   --lightBg: #fff;
+  --lightBg2: rgba(5, 5, 5, 0.5);
   --lightColor: #232323; }
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s; }
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(2.5); }
+
+ul#menu li {
+  display: inline-block;
+  color: var(--lightColor); }
 
 i {
   color: var(--lightColor); }
@@ -96,6 +113,39 @@ html.transition *:after {
   -o-transition: ease-in-out 200ms !important;
   transition: ease-in-out 200ms !important;
   transition-delay: 0 !important; }
+
+.blue {
+  color: #3490dc; }
+
+.indigo {
+  color: #6574cd; }
+
+.purple {
+  color: #9561e2; }
+
+.pink {
+  color: #f66d9b; }
+
+.red {
+  color: #e3342f; }
+
+.orange {
+  color: #f6993f; }
+
+.yellow {
+  color: #ffed4a; }
+
+.green {
+  color: #38c172; }
+
+.teal {
+  color: #4dc0b5; }
+
+.cyan {
+  color: #6cb2eb; }
+
+.white {
+  color: #fff; }
 
 .menu-btn {
   position: absolute;
@@ -279,8 +329,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #0d0d0d;
+    background: var(--lightBg2);
     padding: 0.5rem;
+    border-top: #ff0000 5px solid;
     border-bottom: #ff0000 5px solid; }
 
 .projects {

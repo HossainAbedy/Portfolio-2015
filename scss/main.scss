@@ -108,8 +108,9 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: var(--lightBg2);
     padding: 0.5rem;
+    border-top: $secondary-color 5px solid;
     border-bottom: $secondary-color 5px solid;
   }
 }

@@ -19,6 +19,7 @@ html {
 
   --lightBtn: #FE016C;
   --lightBg: #232323;
+  --lightBg2: #000;
   --lightColor: #fff;
 }
 
@@ -26,7 +27,28 @@ html[data-theme='dark'] {
    background: var(--lightBg);
   --lightBtn: #FFBD07;
   --lightBg: #fff;
+  --lightBg2: rgba(5, 5, 5, 0.5);
   --lightColor: #232323;
+}
+
+.zoom {
+  padding: 10px;
+  // background-color: green;
+  transition: transform .2s;
+  // width: 200px;
+  // height: 200px;
+  // margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2.5); 
+}
+
+ul#menu li {
+  display:inline-block;
+  color: var(--lightColor);
 }
 
 i {
@@ -184,3 +206,62 @@ $background-opacity: 0.5;
     @content;
   }
 }
+
+// color classes
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// custom Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$white: #fff;
+
+//custom
+
+.blue{
+    color:$blue;
+}
+.indigo{
+    color:$indigo;
+}
+.purple{
+    color:$purple;
+}
+.pink{
+    color:$pink;
+}
+.red{
+    color:$red;
+}
+.orange{
+    color:$orange;
+}
+.yellow{
+    color:$yellow;
+}
+.green{
+    color:$green;
+}
+.teal{
+    color:$teal;
+}
+.cyan{
+    color:$cyan;
+}
+.white{
+    color:$white;
+}
+// custom Colors
