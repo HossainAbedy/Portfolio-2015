@@ -709,49 +709,63 @@ img {
   text-decoration: none;
   cursor: pointer; }
 
-.animation {
-  animation: animate 7s linear infinite; }
+.animationH {
+  animation: animateH 7s linear infinite; }
 
-.animation:nth-child(1) {
+.animationA {
+  animation: animateA 5s linear infinite; }
+
+.animationH:nth-child(1) {
   animation-delay: 0s; }
 
-.animation:nth-child(2) {
+.animationH:nth-child(2) {
   animation-delay: 0.50s; }
 
-.animation:nth-child(3) {
+.animationH:nth-child(3) {
   animation-delay: 1.00s; }
 
-.animation:nth-child(4) {
+.animationH:nth-child(4) {
   animation-delay: 1.50s; }
 
-.animation:nth-child(5) {
+.animationH:nth-child(5) {
   animation-delay: 2s; }
 
-.animation:nth-child(6) {
+.animationH:nth-child(6) {
   animation-delay: 2.50s; }
 
-.animation:nth-child(7) {
+.animationH:nth-child(7) {
   animation-delay: 3.00s; }
 
-.animation:nth-child(8) {
+.animationA:nth-child(1) {
   animation-delay: 3.50s; }
 
-.animation:nth-child(9) {
+.animationA:nth-child(2) {
   animation-delay: 4.00s; }
 
-.animation:nth-child(10) {
+.animationA:nth-child(3) {
   animation-delay: 4.50s; }
 
-.animation:nth-child(11) {
+.animationA:nth-child(4) {
   animation-delay: 5.00s; }
 
-.animation:nth-child(12) {
+.animationA:nth-child(5) {
   animation-delay: 5.50s; }
 
-.animation:nth-child(13) {
+.animationA:nth-child(6) {
   animation-delay: 6.00s; }
 
-@keyframes animate {
+@keyframes animateH {
+  0%, 100% {
+    color: #ff0000;
+    filter: blur(2px);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff; }
+  5%, 95% {
+    color: #fff;
+    filter: blur(0px);
+    text-shadow: 0 0 10px none;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; } }
+
+@keyframes animateA {
   0%, 100% {
     color: #fff;
     filter: blur(2px);
