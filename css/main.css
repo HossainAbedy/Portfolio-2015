@@ -709,6 +709,51 @@ img {
   text-decoration: none;
   cursor: pointer; }
 
+.animation {
+  animation: animate 2000ms linear infinite; }
+
+.animation:nth-child(1) {
+  animation-delay: 0s; }
+
+.animation:nth-child(2) {
+  animation-delay: 0.25s; }
+
+.animation:nth-child(3) {
+  animation-delay: 0.50s; }
+
+.animation:nth-child(4) {
+  animation-delay: 0.75s; }
+
+.animation:nth-child(5) {
+  animation-delay: 1s; }
+
+.animation:nth-child(6) {
+  animation-delay: 1.25s; }
+
+.animation:nth-child(7) {
+  animation-delay: 1.50s; }
+
+.animation:nth-child(8) {
+  animation-delay: 1.75s; }
+
+.animation:nth-child(9) {
+  animation-delay: 2.00s; }
+
+.animation:nth-child(10) {
+  animation-delay: 2.25s; }
+
+.animation:nth-child(11) {
+  animation-delay: 2.50s; }
+
+@keyframes animate {
+  0%, 100% {
+    color: #fff;
+    filter: blur(2px);
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000, 0 0 400px #ff0000; }
+  5%, 95% {
+    color: #ff0000;
+    filter: blur(0px); } }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
