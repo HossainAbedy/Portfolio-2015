@@ -747,12 +747,13 @@ img {
 
 @keyframes animate {
   0%, 100% {
-    color: #fff;
+    color: #ff0000;
     filter: blur(2px);
     box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000, 0 0 400px #ff0000; }
   5%, 95% {
-    color: #ff0000;
-    filter: blur(0px); } }
+    color: #fff;
+    filter: blur(0px);
+    text-shadow: 0 0 10px none; } }
 
 @media screen and (min-width: 1171px) {
   .projects {
