@@ -745,6 +745,14 @@ section {
   filter: blur(4px);
 }
 
+.set4{
+  transform: scale(2) rotateY(180deg);
+}
+
+.set5{
+  transform: scale(0.5) rotateY(180deg);
+}
+
 .flakecontainer div{
   position: absolute;
   display: block;
@@ -854,41 +862,41 @@ section {
 @keyframes animateFlakes{
   0%{
     opacity: 0;
-    top: 10%;
+    top: -10%;
     transform: translateX(20px) rotate(0deg);
   }
   10%{
     opacity: 1;
-    // top: 100%;
+    transform: translateX(-20px) rotate(45deg);
   }
   20%{
-    transform: translateX(-20px) rotate(45deg);
-    top: 100%;
-  }
-  // 30%{
-  //   top: 100%;
-  // }
-  40%{
     transform: translateX(-20px) rotate(90deg);
   }
-  // 50%{
-  //   top: 100%;
-  // }
-  60%{
-    transform: translateX(20px) rotate(135deg);
+  30%{
+    transform: translateX(-20px) rotate(135deg);
   }
-  // 70%{
-  //   top: 100%;
-  // }
-  80%{
+  40%{
     transform: translateX(-20px) rotate(180deg);
   }
-  // 90%{
-  //   top: 100%;
-  // }
+  50%{
+    transform: translateX(-20px) rotate(225deg);
+  }
+  60%{
+    transform: translateX(20px) rotate(270deg);
+  }
+  70%{
+    transform: translateX(-20px) rotate(305deg);
+  }
+  80%{
+    opacity: 0;
+    transform: translateX(-20px) rotate(350deg);
+  }
+  90%{
+    transform: translateX(-20px) rotate(360deg);
+  }
   100%{
     opacity: 0;
-    transform: translateX(-20px) rotate(225deg);
+    transform: translateX(-20px) rotate(0deg);
     top: 110%;
   }
 }
