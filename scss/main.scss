@@ -536,6 +536,7 @@ img{
 }
  .animationH:nth-child(1){
   animation-delay: 0s;
+  // transform: rotateY(90deg);
 }
  .animationH:nth-child(2){
   animation-delay: 0.50s;
@@ -616,26 +617,28 @@ img{
 }
 
 .animatebtn {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // color: #1670f0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
   // padding: 30px 60px;
-  // font-size: 30px;
-  // letter-spacing: 2px;
-  // text-transform: uppercase;
-  // text-decoration: none;
-  // box-shadow: 0 20px 50px rgba(black, .5);
-  // overflow: hidden;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(black, .5);
+  overflow: hidden;
   
   &:before {
     content: '';
-    // position: absolute;
-    // top: 2px;
-    // left: 2px;
-    // bottom: 2px;
-    // width: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 100%;
     background: rgba(white, .05);
   }
   
@@ -716,5 +719,180 @@ img{
   }  
 }
 //Abedy Animation
+
+//Abedy Falling SnowFlakes Animation
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.flakecontainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.set2{
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+
+.set3{
+  transform: scale(0.7) rotateX(180deg);
+  filter: blur(4px);
+}
+
+.flakecontainer div{
+  position: absolute;
+  display: block;
+}
+
+.flakecontainer div:nth-child(1){
+  left: 10%;
+  animation: animateFlakes 20s linear infinite;
+  // animation-delay: -5s;
+}
+.flakecontainer div:nth-child(2){
+  left: 20%;
+  animation: animateFlakes 21s linear infinite;
+  // animation-delay: -7s;
+}
+.flakecontainer div:nth-child(3){
+  left: 30%;
+  animation: animateFlakes 22s linear infinite;
+  // animation-delay: -9s;
+}
+.flakecontainer div:nth-child(4){
+  left: 40%;
+  animation: animateFlakes 23s linear infinite;
+  // animation-delay: -3s;
+}
+.flakecontainer div:nth-child(5){
+  left: 50%;
+  animation: animateFlakes 24s linear infinite;
+  // animation-delay: -11s;
+}
+.flakecontainer div:nth-child(6){
+  left: 60%;
+  animation: animateFlakes 25s linear infinite;
+  // animation-delay: -11s;
+}
+.flakecontainer div:nth-child(7){
+  left: 70%;
+  animation: animateFlakes 26s linear infinite;
+  // animation-delay: -9s;
+}
+.flakecontainer div:nth-child(8){
+  left: 80%;
+  animation: animateFlakes 27s linear infinite;
+  // animation-delay: -7s;
+}
+.flakecontainer div:nth-child(9){
+  left: 90%;
+  animation: animateFlakes 28s linear infinite;
+  // animation-delay: -5s;
+}
+.flakecontainer div:nth-child(10){
+  left: 95%;
+  animation: animateFlakes 29s linear infinite;
+  // animation-delay: -3s;
+}
+.flakecontainer div:nth-child(11){
+  left: 15%;
+  animation: animateFlakes 30s linear infinite;
+  // animation-delay: -7s;
+}
+.flakecontainer div:nth-child(12){
+  left: 25%;
+  animation: animateFlakes 31s linear infinite;
+  // animation-delay: -5s;
+}
+.flakecontainer div:nth-child(13){
+  left: 35%;
+  animation: animateFlakes 32s linear infinite;
+  // animation-delay: -9s;
+}
+.flakecontainer div:nth-child(14){
+  left: 45%;
+  animation: animateFlakes 33s linear infinite;
+  // animation-delay: -5s;
+}
+.flakecontainer div:nth-child(15){
+  left: 65%;
+  animation: animateFlakes 34s linear infinite;
+  // animation-delay: -11s;
+}
+.flakecontainer div:nth-child(16){
+  left: 75%;
+  animation: animateFlakes 35s linear infinite;
+  // animation-delay: -7s;
+}
+.flakecontainer div:nth-child(17){
+  left: 85%;
+  animation: animateFlakes 36s linear infinite;
+  // animation-delay: -9s;
+}
+.flakecontainer div:nth-child(18){
+  left: 95%;
+  animation: animateFlakes 37s linear infinite;
+  // animation-delay: -9s;
+}
+.flakecontainer div:nth-child(19){
+  left: 5%;
+  animation: animateFlakes 38s linear infinite;
+  // animation-delay: -7s;
+}
+.flakecontainer div:nth-child(20){
+  left: 55%;
+  animation: animateFlakes 40s linear infinite;
+  // animation-delay: -7s;
+}
+
+@keyframes animateFlakes{
+  0%{
+    opacity: 0;
+    top: 10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10%{
+    opacity: 1;
+    // top: 100%;
+  }
+  20%{
+    transform: translateX(-20px) rotate(45deg);
+    top: 100%;
+  }
+  // 30%{
+  //   top: 100%;
+  // }
+  40%{
+    transform: translateX(-20px) rotate(90deg);
+  }
+  // 50%{
+  //   top: 100%;
+  // }
+  60%{
+    transform: translateX(20px) rotate(135deg);
+  }
+  // 70%{
+  //   top: 100%;
+  // }
+  80%{
+    transform: translateX(-20px) rotate(180deg);
+  }
+  // 90%{
+  //   top: 100%;
+  // }
+  100%{
+    opacity: 0;
+    transform: translateX(-20px) rotate(225deg);
+    top: 110%;
+  }
+}
+
+//Abedy Falling SnowFlakes Animation
 
 @import 'mobile';
