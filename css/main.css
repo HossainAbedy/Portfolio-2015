@@ -150,7 +150,7 @@ html.transition *:after {
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
+  left: 35px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
@@ -158,7 +158,7 @@ html.transition *:after {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: var(--lightColor);
+    background: #ff0000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -1023,7 +1023,7 @@ section {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portrait.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
@@ -1044,7 +1044,7 @@ section {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portrait.jpg");
       width: 150px;
       height: 150px; }
   .projects {
