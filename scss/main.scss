@@ -4,7 +4,9 @@
 * {
   box-sizing: border-box;
 }
-canvas {display: block;}
+canvas {
+  display: block; 
+}
 body {
   @include background;
   background: var(--lightBg);
@@ -84,7 +86,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
-    grid-area: bioimage;
+    grid-area: 'bioimage';
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
@@ -736,7 +738,8 @@ section {
 }
 
 .set2{
-  transform: scale(2) rotateY(180deg);
+  transform: scale(0.8) rotateY(180deg);
+  // overflow-x: hidden;
   filter: blur(2px);
 }
 
@@ -746,7 +749,8 @@ section {
 }
 
 .set4{
-  transform: scale(2) rotateY(180deg);
+  transform: scale(0.9) rotateY(180deg);
+  // overflow-x: hidden;
 }
 
 .set5{

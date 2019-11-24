@@ -10,6 +10,11 @@
     .projects {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    canvas {
+      display: block;
+      width: 1170px; 
+    }
   }
   
   // Tablets & Small Laptops
@@ -67,6 +72,11 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
+    canvas {
+      display: block;
+      width: 768; 
+    }
+
   }
   
   // Smartphones
@@ -96,5 +106,10 @@
   
     .projects {
       grid-template-columns: 1fr;
+    }
+
+    canvas {
+      display: block;
+      width: 500px; 
     }
   }
